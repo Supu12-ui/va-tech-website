@@ -1,0 +1,119 @@
+.main-testimonials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 2vmax 0 7vmax 0;
+}
+
+.testimonial-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.arrow-testimonial {
+  border-radius: 100px;
+  border: 0.5px solid grey;
+  padding: 0.7vmax;
+  transition: all ease 0.5s;
+}
+
+.arrow-testimonial:hover {
+  font-weight: 900;
+  cursor: pointer;
+  box-shadow: 2px 2px 50px 3px rgb(136, 136, 136);
+  padding: 0.8vmax;
+}
+
+.testimonial-img {
+  height: 2vmax;
+  width: 2vmax;
+  border-radius: 1000px;
+  margin-right: 1vmax;
+}
+
+.testimonial-head {
+  font-size: 3.6vmax;
+  font-weight: 600;
+  margin: 2vmax 0 3.6vmax 0;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 18vmax;
+  width: 30vmax;
+  border: 0.2px solid rgb(141, 141, 141);
+  border-radius: 6px;
+  margin: 0 2vmax;
+  padding: 7vmax 3vmax;
+  background-color: rgba(232, 236, 255, 0.578);
+  box-shadow: 0px 15px 20px 0px rgba(192, 192, 192, 0.612);
+}
+
+.card-user-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 1.5vmax 0 0vmax 0;
+}
+
+.head-card {
+  font-size: 1.7vmax;
+  font-weight: 600;
+}
+
+.card-desc {
+  font-size: 1.2vmax;
+  text-align: justify;
+  line-height: 2vmax;
+  margin: 0vmax 4vmax 0 0vmax;
+  color: rgb(73, 72, 72);
+}
+
+@media screen and (max-width: 480px) {
+  .main-testimonials {
+    display: none;
+  }
+}
+
+/*  iPads, Tablets */
+@media screen and (min-width: 481px) and (max-width: 560px) {
+  .card-container {
+    height: auto;
+    padding: 1vmax 1vmax;
+    margin: 0 0.5vmax;
+  }
+
+  .testimonial-img {
+    height: 2vmax;
+    width: 2vmax;
+  }
+
+  .arrow-testimonial {
+    border: none;
+  }
+
+  .arrow-testimonial:hover {
+    box-shadow: none;
+    border: none;
+  }
+}
+
+/* Small screens, laptops */
+@media screen and (min-width: 561px) and (max-width: 1100px) {
+  .card-container {
+    height: auto;
+    padding: 2vmax 2vmax;
+  }
+
+  .testimonial-img {
+    height: 5vmax;
+    width: 5vmax;
+  }
+}

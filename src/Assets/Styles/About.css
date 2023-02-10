@@ -1,0 +1,39 @@
+#main-box-about {
+  margin-top: 6vmax;
+}
+
+/* Heading */
+.heading-about {
+  display: flex;
+  justify-content: center;
+}
+
+.about-head {
+  font-size: 3vmax;
+  font-weight: 700;
+  line-height: 4vmax;
+  margin: 3vmax 0;
+}
+
+.heading-about-img img {
+  width: 40vmax;
+}
+
+@media screen and (max-width: 480px) {
+  .heading-about-img img {
+    display: none;
+  }
+
+  .about-head {
+    text-align: center;
+    font-size: 4vmax;
+    line-height: 6vmax;
+  }
+}
+
+/*  iPads, Tablets */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .about-content {
+    margin-right: 3vmax;
+  }
+}

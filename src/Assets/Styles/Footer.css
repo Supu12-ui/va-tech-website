@@ -1,0 +1,39 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 6vmax 0 4vmax 0;
+  font-size: 1.2vmax;
+  color: white;
+  background: #2d2d2d;
+  font-weight: 500;
+  bottom: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+.social-footer-icon {
+  transition: all ease 0.5s;
+}
+
+.social-media-footer {
+  margin-top: 1vmax;
+  letter-spacing: 2px;
+}
+
+#Footer-btn {
+  text-decoration: none;
+  color: white;
+}
+
+.social-footer-icon:hover {
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: larger;
+}

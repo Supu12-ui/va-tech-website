@@ -1,0 +1,137 @@
+.contact-uss {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  margin: 3vmax 0 10vmax 0;
+  width: 100%;
+}
+
+.contactContentt {
+  width: 45%;
+  padding: 5vmax 2vmax;
+  background: linear-gradient(
+    0deg,
+    rgba(7, 98, 238, 0.1),
+    rgba(7, 98, 238, 0.1)
+  );
+}
+
+.contact-Formm {
+  width: 65%;
+  padding: 5vmax 5vmax;
+  font-family: "Poppins", sans-serif;
+}
+
+.contactus-descc {
+  font-size: 1.4vmax;
+  padding: 1vmax 0;
+  font-style: normal;
+  font-weight: 400;
+  color: #2d2d2d;
+}
+
+.contactus-headerr {
+  font-weight: 600;
+  font-size: 2.5vmax;
+  line-height: 54px;
+  margin: 1.5vmax 0;
+}
+
+.contact-Formm {
+  font-weight: 500;
+  font-size: 1.3vmax;
+  color: #989696;
+}
+
+.form-groupp {
+  margin-bottom: 1.6vmax;
+  transition: all 0.3s;
+  width: 49%;
+}
+
+.form-linee {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-labell {
+  display: block;
+  opacity: 1;
+  transform: translateY(-1.35em);
+  transform-origin: 0 0;
+  transition: all 0.3s;
+}
+
+.form-controll {
+  box-shadow: none;
+  background-color: transparent;
+  border-radius: 0px;
+  border-style: none none solid none;
+  width: 100%;
+  transition: all 0.5s;
+  padding: 0.7vmax;
+}
+
+.message {
+  width: 100%;
+}
+
+.form-controll::placeholder {
+  color: transparent;
+}
+
+.form-controll:focus {
+  box-shadow: none;
+  outline: none;
+  border-color: rgba(67, 136, 240, 0.76);
+}
+
+.form-controll:focus + .form-labell,
+.form-controll:not(:placeholder-shown) + .form-labell {
+  transform: translateY(-4em) scale(0.8);
+}
+
+.form-groupp:focus-within {
+  transform: scale(1.05, 1.05);
+}
+
+@media (max-width: 800px) {
+  .contact-uss {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contactus-headerr,
+  .contactus-descc {
+    text-align: center;
+  }
+
+  .contactContentt {
+    width: 100%;
+  }
+
+  .contact-Formm {
+    width: 100%;
+    margin-top: 2vmax;
+  }
+
+  .submit {
+    align-items: center;
+  }
+}
+
+@media (max-width: 420px) {
+  .form-linee {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .lName,
+  .fName,
+  .number,
+  .email {
+    width: 100%;
+  }
+}
