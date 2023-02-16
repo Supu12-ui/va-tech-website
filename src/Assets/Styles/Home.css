@@ -380,7 +380,7 @@
   z-index: -1;
   width: 20vmax;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   margin: 0 1vmax 0 20vmax;
 }
 
