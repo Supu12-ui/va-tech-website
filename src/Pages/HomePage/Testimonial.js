@@ -12,7 +12,7 @@ const Testimonial = ({
 
     return (
         <>
-            <div className="card-container">
+            <div className="card-container" style={{marginTop:"10vmax"}}>
                 <div className='head-card'>
                     {head} </div>
                 <div className="card-icon">

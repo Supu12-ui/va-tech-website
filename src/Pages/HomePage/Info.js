@@ -13,9 +13,7 @@ const Info = ({img, Rectangle, headText, subHeadText}) => {
                     <img src={img}
                         alt="officeClip"
                         className="officeImg"/>
-                    <img src={Rectangle}
-                        alt="rectangle"
-                        className="rectangle"/>
+                   
                 </div>
                 <div className="contact-content">
                     <div className='contact-content-head'>
@@ -23,7 +21,7 @@ const Info = ({img, Rectangle, headText, subHeadText}) => {
                     <div className='contact-content-sub-head'>
                         {subHeadText}</div>
                     <Link to="contactus">
-                        <button className="btn-2" id='btn-contactUs'>Contact Us</button>
+                        <button className="btn-2" id='btn-contactUs' style={{BorderRadius:"5vmax"}}>Contact Us</button>
                     </Link>
                 </div>
             </div>

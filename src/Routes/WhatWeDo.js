@@ -5,6 +5,7 @@ import Img6 from '../Assets/Images/Services/6.png';
 import Img7 from '../Assets/Images/Services/7.png';
 import Img8 from '../Assets/Images/Services/8.png';
 import Img9 from '../Assets/Images/Services/9.png';
+import SimpleImageSlider from "react-simple-image-slider";
 import {HiOutlinePencilAlt} from "react-icons/hi";
 import {MdMobileFriendly, MdOutlineCheck} from "react-icons/md";
 import {BsFillCartFill} from "react-icons/bs";
@@ -36,6 +37,13 @@ import Carousel from 'react-bootstrap/Carousel';
 import '../Assets/Styles/WhatWeDo.css';
 import '../Assets/Styles/common/common.css';
 const WhatWeDo = () => {
+    const [imageNum, setImageNum] = useState(1);
+    const sliderImages = [
+        Img1,
+        Img3,
+        Img6,
+        Img9,
+    ];
     const [selected, setselected] = useState(1);
 
     const [index, setIndex] = useState(0);
@@ -45,40 +53,24 @@ const WhatWeDo = () => {
     };
     return (
         <>
+        <h1 style={{marginLeft:'10vmax',marginTop:'10vmax'}}>As a leading vaTech. software development company,<br></br> we have a team of highly motivated FinTech developers</h1>
             <div className='main-box'>
-                <div className="whatwedo-container">
+                <div className="whatwedo-container" style={{marginTop: "15vmax"}} >
                     <div className={
                         selected == 1 ? "whatwedo-image-section" : "notShow"
                     }>
-                        <img src={Img9}
-                            className="img-whatwedo"/>
-                        <img src={Img3}
-                            className="img-whatwedo"/>
-                        <img src={Img6}
-                            className="img-whatwedo"/>
+                        
                     </div>
                     <div className={
                         selected == 2 ? "whatwedo-image-section" : "notShow"
                     }>
-                        <img src={Img3}
-                            className="img-whatwedo"/>
-                        <img src={Img8}
-                            className="img-whatwedo"/>
-                        <img src={Img3}
-                            className="img-whatwedo"/>
                     </div>
                     <div className={
                         selected == 3 ? "whatwedo-image-section" : "notShow"
                     }>
-                        <img src={Img6}
-                            className="img-whatwedo"/>
-                        <img src={Img7}
-                            className="img-whatwedo"/>
-                        <img src={Img8}
-                            className="img-whatwedo"/>
                     </div>
-                    <div className="whatwedo-content">
-                        <div className="whatwedo-content-detail">
+                    <div className="whatwedo-content" >
+                        <div className="whatwedo-content-detail"style={{marginTop: "10vmax"}}>
                             <div className='whatwedo-content-detail-headers'>
                                 <div className={
                                         selected == 1 ? 'whatwedo-header selected' : "whatwedo-header"
@@ -111,48 +103,48 @@ const WhatWeDo = () => {
                                 selected == 1 ? "whatwedo-content-detail-list" : "notShow"
                             }>
                                 <ul>
-                                    <li className="services-li">
+                                    <li className="nav-btn1 services-li">
                                         <span className="icon"><HiOutlinePencilAlt/>
                                         </span>
                                         <span>UX/UI Design</span>
                                     </li>
-                                    <li className="services-li">
+                                    <li className="nav-btn1 services-li">
                                         <span className="icon"><MdMobileFriendly/>
                                         </span>
                                         <span>Mobile App Development</span>
                                     </li>
-                                    <li className="services-li">
+                                    <li className="nav-btn1 services-li">
                                         <span className="icon"><FaLaptopCode/>
                                         </span>
                                         <span>Web App development</span>
                                     </li>
-                                    <li className="services-li">
+                                    <li className="nav-btn1 services-li">
                                         <span className="icon"><FaHeadSideVirus/>
                                         </span>
                                         <span>Chatbot & Machine Learning</span>
                                     </li>
-                                    <li className="services-li">
+                                    <li className="nav-btn1 services-li">
                                         <span className="icon"><MdOutlineCheck/>
                                         </span>
                                         <span>QA & Testing Services</span>
                                     </li>
-                                    <li className="services-li">
+                                    <li className="nav-btn1 services-li">
                                         <span className="icon"><FaHeadset/></span>
                                         <span>Support and Maintenance</span>
                                     </li>
-                                    <li className="services-li">
+                                    <li className="nav-btn1 services-li">
                                         <span className="icon"><BsFillCartFill/></span>
                                         <span>E-Commerce App Development</span>
                                     </li>
-                                    <li className="services-li">
+                                    <li className="nav-btn1 services-li">
                                         <span className="icon"><SiChatbot/></span>
                                         <span>AI/ Machine Learning</span>
                                     </li>
-                                    <li className="services-li">
+                                    <li className="nav-btn1 services-li">
                                         <span className="icon"><SiHiveBlockchain/></span>
                                         <span>Blockchain App Development</span>
                                     </li>
-                                    <li className="services-li">
+                                    <li className="nav-btn1 services-li">
                                         <span className="icon"><AiFillCloud/></span>
                                         <span>Cloud Services</span>
                                     </li>
@@ -162,23 +154,23 @@ const WhatWeDo = () => {
                                 selected == 2 ? "whatwedo-content-detail-list" : "notShow"
                             }>
                                 <ul>
-                                    <li className="services-li">
+                                    <li className="nav-btn1 services-li">
                                         <span className="icon"><AiFillAndroid/></span>Android App Development</li>
-                                    <li className="services-li">
+                                    <li className="nav-btn1 services-li">
                                         <span className="icon"><SiReact/></span>React Native Development</li>
-                                    <li className="services-li">
+                                    <li className="nav-btn1 services-li">
                                         <span className="icon"><SiFlutter/></span>Flutter App development</li>
-                                    <li className="services-li">
+                                    <li className="nav-btn1 services-li">
                                         <span className="icon"><RiAngularjsFill/></span>Angular JS Development</li>
-                                    <li className="services-li">
+                                    <li className="nav-btn1 services-li">
                                         <span className="icon"><SiJava/></span>Java Development</li>
-                                    <li className="services-li">
+                                    <li className="nav-btn1 services-li">
                                         <span className="icon"><SiIos/></span>iOS app development</li>
-                                    <li className="services-li">
+                                    <li className="nav-btn1 services-li">
                                         <span className="icon"><SiXamarin/></span>Xamarin App Development</li>
-                                    <li className="services-li">
+                                    <li className="nav-btn1 services-li">
                                         <span className="icon"><SiReact/></span>React JS Development</li>
-                                    <li className="services-li">
+                                    <li className="nav-btn1 services-li">
                                         <span className="icon"><SiNodedotjs/></span>Node JS Development</li>
                                 </ul>
                             </div>
@@ -186,25 +178,35 @@ const WhatWeDo = () => {
                                 selected == 3 ? "whatwedo-content-detail-list" : "notShow"
                             }>
                                 <ul>
-                                    <li className="services-li">
+                                    <li className="nav-btn1 services-li">
                                         <span className="icon"><GiHealthNormal/></span>Healthcare</li>
-                                    <li className="services-li">
+                                    <li className="nav-btn1 services-li">
                                         <span className="icon"><GoLaw/></span>Law Enforcement</li>
-                                    <li className="services-li">
+                                    <li className="nav-btn1 services-li">
                                         <span className="icon"><MdEmojiTransportation/></span>Transportation</li>
-                                    <li className="services-li">
+                                    <li className="nav-btn1 services-li">
                                         <span className="icon"><MdSportsBasketball/></span>Sports</li>
-                                    <li className="services-li">
+                                    <li className="nav-btn1 services-li">
                                         <span className="icon"><GoGist/></span>GIS</li>
-                                    <li className="services-li">
+                                    <li className="nav-btn1 services-li">
                                         <span className="icon"><FaFingerprint/></span>Biometrics</li>
                                 </ul>
                             </div>
                         </div>
 
-                        <div className="whatwedo-content-img">
-                            <img src={Img1}
-                                className="img-whatwedo-bottom"/>
+                        <div className="whatwedo-content-img" style={{marginTop: '12vmax'}}>
+                        <SimpleImageSlider
+            width={400}
+            height={300}
+            images={sliderImages}
+            showBullets={true}
+            showNavs={true}
+            autoPlay={true} 
+            onStartSlide = {(index, length) => {
+               setImageNum(index);
+            }}
+               autoPlayDelay = {3}
+         />
                             <div className="whatwedo-content-img-carousal">
 
                                 <Carousel activeIndex={index}

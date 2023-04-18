@@ -96,7 +96,7 @@ const Services = () => {
                     </ul>
 
                     <Link to='WhatWeDo'>
-                        <button className="btn-1 btn-explore">Explore all Services</button>
+                        <button className="btn-1 btn-explore" style={{borderRadius:'15vmax'}}>Explore all Services</button>
                     </Link>
                 </div>
                 <div className="services-img-content">

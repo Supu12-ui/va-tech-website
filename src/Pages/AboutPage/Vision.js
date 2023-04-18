@@ -87,14 +87,14 @@ const Vision = () => {
                     </ul>
 
                     <Link to='/contactus'>
-                        <button className="btn-1 btn-explore">Contact Us</button>
+                        <button className="btn-1 btn-explore" style={{borderRadius:'10vmax'}}>Contact Us</button>
                     </Link>
                 </div>
                 <div className="services-img-content">
                     <div className={
                         display == 1 ? "display" : "notShow"
                     }>
-                        <div className="services-img">
+                        <div className="services-img shrink">
                             <img src={Img1}
                                 alt="Img1"/>
                             <img src={Img2}
@@ -110,7 +110,7 @@ const Vision = () => {
                     <div className={
                         display == 2 ? "display" : "notShow"
                     }>
-                        <div className="services-img">
+                        <div className="services-img shrink">
                             <img src={Img3}
                                 alt="Img1"/>
                             <img src={Img4}
@@ -125,7 +125,7 @@ const Vision = () => {
                     <div className={
                         display == 3 ? "display" : "notShow"
                     }>
-                        <div className="services-img">
+                        <div className="services-img shrink">
                             <img src={Img5}
                                 alt="Img1"/>
                             <img src={Img6}
@@ -140,7 +140,7 @@ const Vision = () => {
                     <div className={
                         display == 4 ? "display" : "notShow"
                     }>
-                        <div className="services-img">
+                        <div className="services-img shrink">
                             <img src={Img7}
                                 alt="Img1"/>
                             <img src={Img8}
@@ -156,7 +156,7 @@ const Vision = () => {
                     <div className={
                         display == 5 ? "display" : "notShow"
                     }>
-                        <div className="services-img">
+                        <div className="services-img shrink">
                             <img src={Img9}
                                 alt="Img1"/>
                             <img src={Img10}

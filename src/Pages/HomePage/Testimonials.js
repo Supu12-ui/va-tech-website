@@ -49,7 +49,7 @@ const Testimonials = () => {
     return (
         <>
             <div className='main-testimonials'>
-                <div className='testimonial-head'>
+                <div className='testimonial-head' >
                     Testimonials
                 </div>
                 <div className='testimonial-cards'>

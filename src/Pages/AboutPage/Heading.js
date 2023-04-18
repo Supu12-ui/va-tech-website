@@ -14,11 +14,11 @@ const Heading = () => {
                         {'\u00A0'}are we</span>
                     <div className='about-head'>We represent a team of intellectual and ethical professionals...</div>
                     <Link to="/whatWeDo">
-                        <button className="btn-1 ">Know More</button></Link>
+                        <button className="btn-1 " style={{borderRadius:'10vmax'}}>Know More</button></Link>
                     <div className="btn-container">
                     </div>
                 </div>
-                <div className="heading-about-img">
+                <div className="heading-about-img shrink" style={{marginTop:"10vmax"}}>
                     <img src={img}
                         alt="stock-img"/>
                 </div>

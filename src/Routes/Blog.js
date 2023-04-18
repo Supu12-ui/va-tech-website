@@ -45,10 +45,10 @@ const Blog = () => {
         <>
 
             <img src={imgMain}
-                className="blog-image"
-                alt="Blog Image"/>
+                className="blog-image shrink"
+                alt="Blog Image" style={{borderRadius:'5vmax'}}/>
 
-            <div className="main-box">
+            <div className="main-box shrink">
                 <div className='blog-container'>
                     <div className='blog-cards-all'>
                         <div className='blog-card'>
@@ -71,14 +71,14 @@ const Blog = () => {
                                             desc={
                                                 card.desc
                                             }/>
-                                        <button className="btn-1">Read More</button>
+                                        <button className="btn-1" style={{borderRadius:'10vmax'}}>Read More</button>
                                     </div>
                                 );
 
                             })
                         } </div>
                     </div>
-                    <div className='blog-info'>
+                    <div className='blog-info' style={{marginTop:'10vmax'}}>
                         <img src={imageInfoOne}
                             className="blog-info-image blog-info-image-one"/>
                         <div className='blog-categories'></div>

@@ -1,11 +1,12 @@
 import React from 'react'
 import img1 from '../../Assets/Images/Progress.png'
 
+
 const Progress = () => {
     return (
         <>
-            <div className="progress-1">
-                <div className="progress-img">
+            <div className="progress-1" style={{marginTop:"-3vmax"}}>
+                <div className="shrink progress-img">
                     <img src={img1}
                         alt="progress"/>
                 </div>

@@ -9,7 +9,7 @@ export default function Footer() {
                 <div>2022 &copy; VAtech Software Pvt. Ltd.</div>
                 <div>Cookies Policy | Privacy Policy</div>
                 <div className="social-media-footer">
-                    <Link href="#" className="social-footer-icon" id="Footer-btn">Facebook
+                    {/* <Link href="#" className="social-footer-icon" id="Footer-btn">Facebook
                     </Link>
                     |
                     <Link href="#" className="social-footer-icon" id="Footer-btn">
@@ -22,10 +22,9 @@ export default function Footer() {
                     |
                     <Link href="#" className="social-footer-icon" id="Footer-btn">
                         YouTube
-                    </Link>
+                    </Link> */}
                     |
-                    <Link href="#" className="social-footer-icon" id="Footer-btn">
-                        LinkedIn
+                    <Link href="https://www.linkedin.com/company/vatech-solutions/?viewAsMember=true" className="social-footer-icon" id="Footer-btn"> LinkedIn
                     </Link>
                 </div>
             </div>

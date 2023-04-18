@@ -1,8 +1,4 @@
 import React from "react";
-import img1 from "../../Assets/Images/google.jpg";
-import img2 from "../../Assets/Images/sony.jpg";
-import img3 from "../../Assets/Images/stack.jpg";
-import img4 from "../../Assets/Images/microsoft.jpg";
 import supportImg1 from "../../Assets/Images/supportImg1.jpg";
 import supportImg2 from "../../Assets/Images/supportImg2.jpg";
 import supportImg3 from "../../Assets/Images/supportImg3.jpg";
@@ -13,32 +9,14 @@ import {FaRegHandshake} from "react-icons/fa";
 import {BsTelephone} from "react-icons/bs";
 import {Link} from 'react-router-dom';
 
+
 const Support = () => {
     return (
         <>
-            <div className="support">
-                <div className="support-heading">
-                    We work with some of the worlds{" "}
-                    <span style={
-                        {color: "blue"}
-                    }>Leading{" "}</span>
-                    companies.
-                </div>
 
-
-                <div className="img-container-company">
-                    <img src={img1}
-                        alt="google"/>
-                    <img src={img2}
-                        alt="sony"/>
-                    <img src={img3}
-                        alt="stack"/>
-                    <img src={img4}
-                        alt="microsoft"/>
-                </div>
-            </div>
-            <div className="support-2">
-                <div className="support-content">
+           
+            <div className="support-2" style={{marginTop:"2vmax"}}>
+                <div className="support-content" style={{marginTop:'10vmax'}}>
 
                     <span className="remaining-span">
                         <span className="span">our
@@ -50,29 +28,29 @@ const Support = () => {
                     </div>
 
                     <ul>
-                        <li className="services-li">
+                        <li className="nav-btn1 services-li">
                             <span className="icon"><TbRocket/>
                             </span>
                             Fast working Progress</li>
-                        <li className="services-li">
+                        <li className="nav-btn1 services-li">
                             <span className="icon"><AiOutlineBulb/>
                             </span>
                             Excellent Protection</li>
-                        <li className="services-li">
+                        <li className="nav-btn1 services-li">
                             <span className="icon"><FaRegHandshake/>
                             </span>
                             Dedicated Team</li>
-                        <li className="services-li">
+                        <li className="nav-btn1 services-li">
                             <span className="icon"><BsTelephone/>
                             </span>
                             24/7 Technical Support</li>
                     </ul>
 
                     <Link to='WhatWeDo'>
-                        <button className="btn-1 btn-explore">Explore all Services</button>
+                        <button className="btn-1 btn-explore" style={{borderRadius:'2vmax'}}>Explore all Services</button>
                     </Link>
                 </div>
-                <div className="support-img">
+                <div className="shrink support-img">
                     <div className="support-img-internal">
                         <img src={supportImg1}
                             alt=""
@@ -88,7 +66,7 @@ const Support = () => {
                     </div>
                     <img src={supportImg4}
                         alt=""
-                        className="supportImg4 img-support-individual"/>
+                        className="supportImg4 img-support-individual" style={{height:"20vmax",width:"40vmax"}}/>
                 </div>
 
             </div>
