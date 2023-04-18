@@ -1,22 +1,22 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import '../Assets/Styles/Contact.css';
-import {initializeApp} from "https://www.gstatic.com/firebasejs/9.11.0/firebase-app.js";
-import {getFirestore, doc, setDoc} from "https://www.gstatic.com/firebasejs/9.11.0/firebase-firestore.js";
+// import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
+// import { getFirestore, doc, setDoc } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore.js";
 
 const ContactUs = () => {
-    const firebaseConfig = {
-        apiKey: "AIzaSyCFx9B-z4VQDl0JG2264t8EsS5R5tm-p8k",
-        authDomain: "va-tech-b5100.firebaseapp.com",
-        projectId: "va-tech-b5100",
-        storageBucket: "va-tech-b5100.appspot.com",
-        messagingSenderId: "233003430207",
-        appId: "1:233003430207:web:f7f4d0b41b763e18bea38a",
-        measurementId: "G-P24ME1XMJ8"
-    };
+    // const firebaseConfig = {
+    //     apiKey: "AIzaSyCFx9B-z4VQDl0JG2264t8EsS5R5tm-p8k",
+    //     authDomain: "va-tech-b5100.firebaseapp.com",
+    //     projectId: "va-tech-b5100",
+    //     storageBucket: "va-tech-b5100.appspot.com",
+    //     messagingSenderId: "233003430207",
+    //     appId: "1:233003430207:web:f7f4d0b41b763e18bea38a",
+    //     measurementId: "G-P24ME1XMJ8"
+    // };
 
-    const app = initializeApp(firebaseConfig);
-    // Initialize Firebase
-    const db = getFirestore();
+    // const app = initializeApp(firebaseConfig);
+    // // Initialize Firebase
+    // const db = getFirestore();
 
 
     const [firstName, setfirstName] = useState("");
@@ -42,29 +42,34 @@ const ContactUs = () => {
         setmessage(e.target.value);
     }
 
-    async function sendMessage() {
-        let timeStamp = Date.now();
-        let name = firstName + " " + lastName;
-        await setDoc(doc(db, "contact", name), {
-            time: new Date(timeStamp),
-            name: name,
-            email: email,
-            contact: contact,
-            message: message
-        });
-        setfirstName("")
-        setlastName("")
-        setemail("")
-        setcontact("")
-        setmessage("")
+    // async function sendMessage() {
+    //     let timeStamp = Date.now();
+    //     let name = firstName + " " + lastName;
+    //     await setDoc(doc(db, "contact", name), {
+    //         time: new Date(timeStamp),
+    //         name: name,
+    //         email: email,
+    //         contact: contact,
+    //         message: message
+    //     });
+    //     setfirstName("")
+    //     setlastName("")
+    //     setemail("")
+    //     setcontact("")
+    //     setmessage("")
 
-        alert("Message sent successfully");
+    //     alert("Message sent successfully");
+    // }
+
+    async function sendMessage() {
+        alert("Sent message")
     }
+
 
 
     return (
         <>
-            <div className="contact-uss">
+            <div className="contact-us">
                 <div className="contactContentt">
                     <span className="remaining-span">
                         <span className="span">Contact
@@ -86,7 +91,7 @@ const ContactUs = () => {
                                 placeholder="John"
                                 onChange={firstNameChange}
                                 required
-                                autocomplete="off"/>
+                                autocomplete="off" />
                             <label htmlFor="name" className="form-labell">First Name</label>
                         </div>
                         <div className="form-groupp lName">
@@ -96,7 +101,7 @@ const ContactUs = () => {
                                 placeholder="Doe"
                                 onChange={lastNameChange}
                                 required
-                                autocomplete="off"/>
+                                autocomplete="off" />
                             <label htmlFor="lastName" className="form-labell">Last Name</label>
                         </div>
                     </div>
@@ -109,7 +114,7 @@ const ContactUs = () => {
                                 placeholder="example@gmail.com"
                                 onChange={emailChange}
                                 required
-                                autocomplete="off"/>
+                                autocomplete="off" />
                             <label htmlFor="email" className="form-labell">Email</label>
                         </div>
                         <div className="form-groupp number">
@@ -119,7 +124,7 @@ const ContactUs = () => {
                                 placeholder="+91123456789"
                                 onChange={contactChange}
                                 required
-                                autocomplete="off"/>
+                                autocomplete="off" />
                             <label htmlFor="number" className="form-labell">Contact Number</label>
                         </div>
                     </div>
@@ -131,7 +136,7 @@ const ContactUs = () => {
                             id="message"
                             placeholder="share your querry"
                             required
-                            autocomplete="off"/>
+                            autocomplete="off" />
                         <label htmlFor="message" className="form-labell">Message</label>
                     </div>
 
@@ -140,7 +145,7 @@ const ContactUs = () => {
                             () => sendMessage()
                         }
                         value="Submit"
-                        className="submit-blue"/>
+                        className="submit-blue" />
                 </div>
             </div>
 

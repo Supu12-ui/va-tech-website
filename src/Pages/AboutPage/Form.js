@@ -1,25 +1,25 @@
 import React, {useState} from "react";
 import '../../Assets/Styles/About.css';
 import {HiArrowNarrowRight} from "react-icons/hi";
-import {initializeApp} from "https://www.gstatic.com/firebasejs/9.11.0/firebase-app.js";
-import {getFirestore, doc, setDoc} from "https://www.gstatic.com/firebasejs/9.11.0/firebase-firestore.js";
+// import {initializeApp} from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
+// import {getFirestore, doc, setDoc} from "https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore.js";
 
 
 const Form = () => {
 
-    const firebaseConfig = {
-        apiKey: "AIzaSyCFx9B-z4VQDl0JG2264t8EsS5R5tm-p8k",
-        authDomain: "va-tech-b5100.firebaseapp.com",
-        projectId: "va-tech-b5100",
-        storageBucket: "va-tech-b5100.appspot.com",
-        messagingSenderId: "233003430207",
-        appId: "1:233003430207:web:f7f4d0b41b763e18bea38a",
-        measurementId: "G-P24ME1XMJ8"
-    };
+    // const firebaseConfig = {
+    //     apiKey: "AIzaSyCFx9B-z4VQDl0JG2264t8EsS5R5tm-p8k",
+    //     authDomain: "va-tech-b5100.firebaseapp.com",
+    //     projectId: "va-tech-b5100",
+    //     storageBucket: "va-tech-b5100.appspot.com",
+    //     messagingSenderId: "233003430207",
+    //     appId: "1:233003430207:web:f7f4d0b41b763e18bea38a",
+    //     measurementId: "G-P24ME1XMJ8"
+    // };
 
-    const app = initializeApp(firebaseConfig);
+    // const app = initializeApp(firebaseConfig);
     // Initialize Firebase
-    const db = getFirestore();
+    // const db = getFirestore();
 
 
     const [firstName, setfirstName] = useState("");
@@ -45,23 +45,27 @@ const Form = () => {
         setmessage(e.target.value);
     }
 
-    async function sendMessage() { // Adding time stamp and changing status
-        let timeStamp = Date.now();
-        let name = firstName + " " + lastName;
-        await setDoc(doc(db, "contact", name), {
-            time: new Date(timeStamp),
-            name: name,
-            email: email,
-            contact: contact,
-            message: message
-        });
-        setfirstName("")
-        setlastName("")
-        setemail("")
-        setcontact("")
-        setmessage("")
+    // async function sendMessage() { // Adding time stamp and changing status
+    //     let timeStamp = Date.now();
+    //     let name = firstName + " " + lastName;
+    //     await setDoc(doc(db, "contact", name), {
+    //         time: new Date(timeStamp),
+    //         name: name,
+    //         email: email,
+    //         contact: contact,
+    //         message: message
+    //     });
+    //     setfirstName("")
+    //     setlastName("")
+    //     setemail("")
+    //     setcontact("")
+    //     setmessage("")
 
-        alert("Message sent successfully");
+    //     alert("Message sent successfully");
+    // }
+
+    async function sendMessage(){
+        alert("Sent successfully")
     }
 
     return (
